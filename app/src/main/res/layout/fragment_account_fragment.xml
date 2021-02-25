@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Account_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    >
+    <TextView
+    android:textAlignment="center"
+    android:textSize="30dp"
+    android:text="Your Email : "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>
+    <TextView
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/passChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3C1391"
+        android:onClick="changePass"
+        android:text="Change Password"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your New Password Below :"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:visibility="invisible">
+
+    </TextView>
+    <EditText
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newpass"
+        android:inputType="numberPassword">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/Updtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3C1391"
+        android:onClick="updt"
+        android:text="Update Password"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+
+    <Button
+
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3C1391"
+        android:onClick="log_out"
+        android:text="Log Out"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+
+
+</FrameLayout>

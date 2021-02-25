@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#E6E6FA"
+    app:cardCornerRadius="3dp"
+    android:elevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#301934"
+        android:id="@+id/name"
+        android:text="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+    />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textColor="#301934"
+            android:id="@+id/wordprice"
+            android:text="     Item Cost :     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            />
+    <TextView
+        android:textColor="#BF00FF"
+        android:id="@+id/price"
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        />
+        <TextView
+            android:textColor="#BF00FF"
+            android:id="@+id/dollarsign"
+            android:text="$     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+
+            android:id="@+id/buynow"
+            android:layout_width="116dp"
+
+            android:layout_height="wrap_content"
+            android:background="#EFE1EA"
+            android:onClick="buyNow"
+            android:text="@string/buy_now"
+            android:textColor="#301934" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
